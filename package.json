@@ -1,0 +1,38 @@
+{
+  "name": "@alobato/hooks",
+  "version": "0.1.0",
+  "description": "React hooks",
+  "repository": "github:alobato/hooks",
+  "author": "alobato",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "bugs": {
+    "url": "https://github.com/alobato/hooks/issues"
+  },
+  "homepage": "https://github.com/alobato/hooks#readme",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.js --format esm,cjs --external react",
+    "dev": "tsup src/index.js --format esm,cjs --watch --external react"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "react": "^18.1.0",
+    "tsup": "^5.12.6"
+  },
+  "dependencies": {
+    "lodash.isequal": "^4.5.0"
+  }
+}
